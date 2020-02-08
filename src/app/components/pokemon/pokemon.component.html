@@ -1,0 +1,14 @@
+<div class="contenedor">
+    <div class="card-body">
+        <h1 class="card-title animated fadeIn">{{ pokemon.name | uppercase}}<br><small>Pokemon: {{pokemon.id}}
+    </small></h1>
+        <div class="row animated fadeIn fast">
+            <div class="col-md-4">
+                <img src="{{pokemon.sprites.front_default}}" style="width:500px;height: 300px;" class="img-fluid">
+                <br>
+                <br>
+                <a [routerLink]="['/pokemones']" class="btn btn-outline-danger btn-block">Regresar</a>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,8 @@
+<div class="card-columns m-5 animated fadeIn">
+    <div (click)="verPokemon(pokeid)" *ngFor="let pokeid of pokemonesArray" class="card puntero">
+        <img class="card-img-top" [src]="pokeImg" alt="photo of {{pokeid.name}}">
+        <div class="card-body">
+            <h5 class="card-title align-content-center">{{pokeid.name}}</h5>
+        </div>
+    </div>
+</div>
